@@ -43,7 +43,7 @@ const Login = ({ onLogin }) => {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
-                    <button type="submit" className="btn-primary">Acessar Portal</button>
+                    <NavLink to={'/'} className="btn-secondary">login</NavLink>
                     <NavLink to={'/Cadastro'} className="btn-secondary">Cadastro</NavLink>
                     {error && <p className="error">{error}</p>}
                 </form>
